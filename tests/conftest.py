@@ -51,8 +51,8 @@ def display(request):
 
 @pytest.fixture
 def firefox_options(firefox_options):
-    # firefox_options.binary = '/tests/gekodriver'
-
+    firefox_options.binary = '/usr/bin/firefox'
+    firefox_options.add_argument('-headless')
     firefox_options.set_preference('dom.disable_beforeunload', True)
     firefox_options.set_preference('browser.tabs.warnOnClose', False)
 
