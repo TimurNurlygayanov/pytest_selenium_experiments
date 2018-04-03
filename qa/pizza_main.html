@@ -1,0 +1,934 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+		<title>QA пицца. Доставка пиццы на дом. Заказать пиццу.</title>
+		<link rel="shortcut icon" href="http://astoria-pizza.ru/bitrix/templates/ap/images/favicon.png" type="image/x-icon" />
+		<script type="text/javascript" src="http://astoria-pizza.ru/bitrix/templates/ap/js/jquery.min.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="http://astoria-pizza.ru/bitrix/js/main/core/css/core.min.css?14744605502854" type="text/css"  rel="stylesheet" />
+        <link href="http://astoria-pizza.ru/bitrix/templates/ap/components/resta.aventa/menu/new/style.css?14804209421388" type="text/css"  rel="stylesheet" />
+        <link href="http://astoria-pizza.ru/bitrix/templates/ap/styles.css?147695444018215" type="text/css"  data-template-style="true"  rel="stylesheet" />
+        <link href="http://astoria-pizza.ru/bitrix/templates/ap/template_styles.css?14604105153559" type="text/css"  data-template-style="true"  rel="stylesheet" />
+
+<!--
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'LANAPIZZA','SERVER_TZ_OFFSET':'10800','SITE_ID':'s2','SITE_DIR':'/','USER_ID':'','SERVER_TIME':'1522509974','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'c1e4f5c611204d61775445aec080921e'});</script>
+-->
+
+<script type="text/javascript" src="http://astoria-pizza.ru/bitrix/js/main/core/core.min.js?149384300573097"></script>
+<link href="http://astoria-pizza.ru/bitrix/templates/ap/jquery.mCustomScrollbar.css" type="text/css" rel="stylesheet" />
+<link href="http://astoria-pizza.ru/bitrix/templates/ap/js/ui-css/jquery-ui.css" type="text/css" rel="stylesheet" />
+<link href="http://astoria-pizza.ru/bitrix/templates/ap/tinyscrollbar.css" type="text/css" rel="stylesheet" />
+<link href="http://astoria-pizza.ru/bitrix/templates/ap/js/fancybox/jquery.fancybox.css" type="text/css" rel="stylesheet" />
+
+
+
+<script type="text/javascript" src="http://astoria-pizza.ru/bitrix/templates/ap/componentshttp://astoria-pizza.ru/bitrix/news.list/banners/script.js?1460410515277"></script>
+<script type="text/javascript" src="http://astoria-pizza.ru/bitrix/templates/ap/js/jquery.ui.min.js?146041051569467"></script>
+<script type="text/javascript" src="http://astoria-pizza.ru/bitrix/templates/ap/js/jquery.ui.datepicker-ru.js?14604105151114"></script>
+<script type="text/javascript" src="http://astoria-pizza.ru/bitrix/templates/ap/js/fancybox/jquery.fancybox.pack.js?146041051522595"></script>
+<script type="text/javascript" src="http://astoria-pizza.ru/bitrix/templates/ap/js/jquery.maskedinput.js?14604105153568"></script>
+<script type="text/javascript" src="http://astoria-pizza.ru/bitrix/templates/ap/js/jquery.tinyscrollbar.min.js?14604105152783"></script>
+<script type="text/javascript" src="http://astoria-pizza.ru/bitrix/templates/ap/js/slides.js?14604105156746"></script>
+<script type="text/javascript" src="http://astoria-pizza.ru/bitrix/templates/ap/js/jquery.mCustomScrollbar.concat.min.js?146041051525983"></script>
+<script type="text/javascript" src="http://astoria-pizza.ru/bitrix/templates/ap/js/pizza-script.js?14740553143999"></script>
+<script type="text/javascript" src="http://astoria-pizza.ru/bitrix/templates/ap/componentshttp://astoria-pizza.ru/bitrix/news.list/banners-right/script.js?146041051574"></script>
+<script type="text/javascript" src="http://astoria-pizza.ru/bitrix/templates/ap/components/resta.aventa/menu/new/script.js?14779000254342"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "93ce480fbd34ebab0720590f23860634"]); _ba.push(["host", "astoria-pizza.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+    <style>
+
+.navbar-static-top {
+  margin: 0;
+}
+
+</style>
+
+
+	</head>
+	<body>
+
+    <div style="text-align: center;" class="root">
+			<div class="fix"></div>
+
+			<noindex>
+				<div class="head">
+					<div class="head_fix">
+
+
+                        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+
+                            <center> <H1> Оталось 4 минуты </H1> </center>
+
+                        </nav>
+
+
+                        <div id="menu1">
+							<div class="max_width">
+									<p class="links">
+					                    <a href="/personal/basket.php">Корзина</a>
+			                        </p>
+									<ul>
+					                    <li><img src="http://astoria-pizza.ru/upload/iblock/930/m1.png"> <a href="/menu/pitstsa/">Пицца</a></li>
+                                        <li><img src="http://astoria-pizza.ru/upload/iblock/1b4/m3.png"> <a href="/menu/pirogi/">Пироги</a></li>
+					                    <li><img src="http://astoria-pizza.ru/upload/iblock/b85/m2.png"> <a href="/menu/pasta/">Паста</a></li>
+					                    <li><img src="http://astoria-pizza.ru/upload/iblock/437/m5.png"> <a href="/menu/salaty/">Салаты</a></li>
+                                        <li><img src="http://astoria-pizza.ru/upload/iblock/22f/m7.png"> <a href="/menu/deserty/">Десерты</a></li>
+			                        </ul>
+                                <div class="clear"></div>
+							</div>
+						</div>
+
+		            </div>
+                </div>
+            </noindex>
+		        <div class="max_width">
+			    <div class="main">
+				<h1 id="pagetitle" class="page_name">Пицца</h1>								<p class="sort" id="pg_title_right"></p>
+
+				<div class="clear"></div>
+				<div class="page content">
+ <div id="slides2">
+	<div class="slides_container">
+					<p><a href="#"><img src="http://astoria-pizza.ru/upload/iblock/940/940ee37ec4bb94a706943b244e91aeb0.jpg" width="480" height="486" alt=""></a></p>
+					<p><a href="#"><img src="http://astoria-pizza.ru/upload/iblock/1ba/1ba624393348adc0e5713d6c164b54f4.jpg" width="480" height="486" alt=""></a></p>
+					<p><a href="/oplata.php"><img src="http://astoria-pizza.ru/upload/iblock/120/1205212181b78857c697b04c353b7e56.jpg" width="480" height="486" alt=""></a></p>
+					<p><a href="/otzyivyi.php"><img src="http://astoria-pizza.ru/upload/iblock/fba/otziv.jpg" width="480" height="486" alt=""></a></p>
+			</div>
+</div>
+
+                    <script>
+	var indexPage=true;
+</script>
+
+<div class="list-h">
+
+
+    <div class="cat_item cnt2" data-tps="">
+        <div class="cat_in shk-item">
+            <div class="image">
+                <a href="http://astoria-pizza.ru/upload/iblock/f17/antoniokamino.jpg" title="Антонио-Камино" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/f17/220_208_1/antoniokamino.jpg" width="220" height="208" alt="" id="pizza-img942"></a>
+            </div>
+            <p class="name-h name">Антонио-Камино</p>
+            <div class="desc-h">
+                <p class="sostav">Антонио-соус сосиски помидоры огурцы маслины грибы зелень</p>
+                <form class="add-to-basket" rel="#pizza-img942">
+                    <input type="hidden" name="ID" value="942" />
+                    <input type="hidden" name="FO_CODE" value="100000075" />
+                    <input type="hidden" name="COMBO" value="910" />
+                    <div class="sized">
+                        <div class="size-i active_size" data-code="100000075"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="503" value="100000075" checked id="size942_100000075" checked="checked" /> <label for="size942_100000075">33 см</label></div>
+                        <div class="size-i " data-code="100000004"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="659" value="100000004"  id="size942_100000004" checked="checked" /> <label for="size942_100000004">40 см</label></div>
+                    </div>
+                    <div class="prices">
+                        <div class="pr"><span class="shk-price">503</span> р</div>
+                        <div class="pr"><span class="shk-price">659</span> р</div>
+                    </div>
+                    <p class="buy">
+                        <button type="submit" name="shk-submit" class="tera"
+                                data-toggle="modal" data-target="#OrderPizza"
+                                data-pizzaname="Антонио-Камино">Заказать</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cat_item cnt2" data-tps="">
+        <div class="cat_in shk-item">
+            <div class="image">
+                <a href="http://astoria-pizza.ru/upload/iblock/ad8/vegetarianskaya.jpg" title="Вегетарианская" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/ad8/220_208_1/vegetarianskaya.jpg" width="220" height="208" alt="" id="pizza-img939"></a>
+            </div>
+            <p class="name-h name">Вегетарианская</p>
+            <div class="desc-h">
+                <p class="sostav">помидоры болг перец маслины грибы лук брокколи</p>
+                <form class="add-to-basket" rel="#pizza-img939" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=939&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=939&FO=100000081">
+                    <input type="hidden" name="ID" value="939" />
+                    <input type="hidden" name="FO_CODE" value="100000081" />
+                    <input type="hidden" name="COMBO" value="910" />
+                    <div class="sized">
+                        <div class="size-i active_size" data-code="100000081"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="503" value="100000081" checked id="size939_100000081" checked="checked" /> <label for="size939_100000081">33 см</label></div>
+                        <div class="size-i " data-code="100000008"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="664" value="100000008"  id="size939_100000008" checked="checked" /> <label for="size939_100000008">40 см</label></div>
+                    </div>
+                    <div class="prices">
+                        <div class="pr"><span class="shk-price">503</span> р</div>
+                        <div class="pr"><span class="shk-price">664</span> р</div>
+                    </div>
+                    <p class="buy">
+                        <button type="submit" name="shk-submit" class="tera">Заказать</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="cat_item cnt2" data-tps="">
+        <div class="cat_in shk-item">
+            <div class="image">
+                <a href="http://astoria-pizza.ru/upload/iblock/56b/gavaiskaya.jpg" title="Гавайская" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/56b/220_208_1/gavaiskaya.jpg" width="220" height="208" alt="" id="pizza-img941"></a>
+            </div>
+            <p class="name-h name">Гавайская</p>
+            <div class="desc-h">
+                <p class="sostav">ветчина ананасы</p>
+                <form class="add-to-basket" rel="#pizza-img941" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=941&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=941&FO=100000084">
+                    <input type="hidden" name="ID" value="941" />
+                    <input type="hidden" name="FO_CODE" value="100000084" />
+                    <input type="hidden" name="COMBO" value="910" />
+                    <div class="sized">
+                        <div class="size-i active_size" data-code="100000084"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="482" value="100000084" checked id="size941_100000084" checked="checked" /> <label for="size941_100000084">33 см</label></div>
+                        <div class="size-i " data-code="100000010"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="630" value="100000010"  id="size941_100000010" checked="checked" /> <label for="size941_100000010">40 см</label></div>
+                    </div>
+                    <div class="prices">
+                        <div class="pr"><span class="shk-price">482</span> р</div>
+                        <div class="pr"><span class="shk-price">630</span> р</div>
+                    </div>
+                    <p class="buy">
+                        <button type="submit" name="shk-submit" class="tera">Заказать</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="cat_item cnt2" data-tps="">
+        <div class="cat_in shk-item">
+            <div class="image">
+                <a href="http://astoria-pizza.ru/upload/iblock/f11/kalconekurinaya.jpg" title="Кальцоне с курицей" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/f11/220_208_1/kalconekurinaya.jpg" width="220" height="208" alt="" id="pizza-img934"></a>
+            </div>
+            <p class="name-h name">Кальцоне с курицей</p>
+            <div class="desc-h">
+                <p class="sostav">курица брокколи лук помидоры</p>
+                <form class="add-to-basket" rel="#pizza-img934" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=934&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=934&FO=100000100">
+                    <input type="hidden" name="ID" value="934" />
+                    <input type="hidden" name="FO_CODE" value="100000100" />
+                    <input type="hidden" name="COMBO" value="" />
+                    <div class="sized">
+                        <div class="size-i active_size" data-code="100000100"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="503" value="100000100" checked id="size934_100000100" checked="checked" /> <label for="size934_100000100">33 см</label></div>
+                    </div>
+                    <div class="prices">
+                        <div class="pr"><span class="shk-price">503</span> р</div>
+                    </div>
+
+
+                    <p class="buy">
+                        <button type="submit" name="shk-submit" class="tera">Заказать</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+					<div class="clearfix"></div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/8fb/laroma.jpg" title="Ля Рома" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/8fb/220_208_1/laroma.jpg" width="220" height="208" alt="" id="pizza-img926"></a>
+				</div>
+				<p class="name-h name">Ля Рома</p>
+				<div class="desc-h">
+					<p class="sostav">говядина(фарш) сосиски томаты огурцы маринованные</p>
+					<form class="add-to-basket" rel="#pizza-img926" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=926&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=926&FO=100000110">
+						<input type="hidden" name="ID" value="926" />
+						<input type="hidden" name="FO_CODE" value="100000110" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000110"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="503" value="100000110" checked id="size926_100000110" checked="checked" /> <label for="size926_100000110">33 см</label></div>
+															<div class="size-i " data-code="100000019"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="685" value="100000019"  id="size926_100000019" checked="checked" /> <label for="size926_100000019">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">503</span> р</div>
+															<div class="pr"><span class="shk-price">685</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/f82/margarita.jpg" title="Маргарита" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/f82/220_208_1/margarita.jpg" width="220" height="208" alt="" id="pizza-img944"></a>
+				</div>
+				<p class="name-h name">Маргарита</p>
+				<div class="desc-h">
+					<p class="sostav">сыр моцарелла</p>
+					<form class="add-to-basket" rel="#pizza-img944" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=944&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=944&FO=100000111">
+						<input type="hidden" name="ID" value="944" />
+						<input type="hidden" name="FO_CODE" value="100000111" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000111"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="460" value="100000111" checked id="size944_100000111" checked="checked" /> <label for="size944_100000111">33 см</label></div>
+															<div class="size-i " data-code="100000020"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="503" value="100000020"  id="size944_100000020" checked="checked" /> <label for="size944_100000020">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">460</span> р</div>
+															<div class="pr"><span class="shk-price">503</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/933/peperoni.jpg" title="Пеперони" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/933/220_208_1/peperoni.jpg" width="220" height="208" alt="" id="pizza-img933"></a>
+				</div>
+				<p class="name-h name">Пеперони</p>
+				<div class="desc-h">
+					<p class="sostav">пеперони</p>
+					<form class="add-to-basket" rel="#pizza-img933" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=933&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=933&FO=100000121">
+						<input type="hidden" name="ID" value="933" />
+						<input type="hidden" name="FO_CODE" value="100000121" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000121"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="503" value="100000121" checked id="size933_100000121" checked="checked" /> <label for="size933_100000121">33 см</label></div>
+															<div class="size-i " data-code="100000025"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="675" value="100000025"  id="size933_100000025" checked="checked" /> <label for="size933_100000025">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">503</span> р</div>
+															<div class="pr"><span class="shk-price">675</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/6eb/belissimo.jpg" title="Белиссимо!!!" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/6eb/220_208_1/belissimo.jpg" width="220" height="208" alt="" id="pizza-img919"></a>
+				</div>
+				<p class="name-h name">Белиссимо!!!</p>
+				<div class="desc-h">
+					<p class="sostav">бекон грибы помидоры болгарский перец</p>
+					<form class="add-to-basket" rel="#pizza-img919" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=919&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=919&FO=100000079">
+						<input type="hidden" name="ID" value="919" />
+						<input type="hidden" name="FO_CODE" value="100000079" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000079"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="514" value="100000079" checked id="size919_100000079" checked="checked" /> <label for="size919_100000079">33 см</label></div>
+															<div class="size-i " data-code="100000007"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="709" value="100000007"  id="size919_100000007" checked="checked" /> <label for="size919_100000007">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">514</span> р</div>
+															<div class="pr"><span class="shk-price">709</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/626/fermerskaya.jpg" title="Фермерская" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/626/220_208_1/fermerskaya.jpg" width="220" height="208" alt="" id="pizza-img920"></a>
+				</div>
+				<p class="name-h name">Фермерская</p>
+				<div class="desc-h">
+					<p class="sostav">колбаски охот. огурцы маринов. бекон помидоры оливки</p>
+					<form class="add-to-basket" rel="#pizza-img920" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=920&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=920&FO=100000140">
+						<input type="hidden" name="ID" value="920" />
+						<input type="hidden" name="FO_CODE" value="100000140" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000140"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="595" value="100000140" checked id="size920_100000140" checked="checked" /> <label for="size920_100000140">33 см</label></div>
+															<div class="size-i " data-code="100000030"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="742" value="100000030"  id="size920_100000030" checked="checked" /> <label for="size920_100000030">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">595</span> р</div>
+															<div class="pr"><span class="shk-price">742</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/7e6/kvadro.jpg" title="Квадро" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/7e6/220_208_1/kvadro.jpg" width="220" height="208" alt="" id="pizza-img921"></a>
+				</div>
+				<p class="name-h name">Квадро</p>
+				<div class="desc-h">
+					<p class="sostav">1/4 суприм 1/4 италика 1/4 купеческая 1/4 американка</p>
+					<form class="add-to-basket" rel="#pizza-img921" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=921&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=921&FO=100000095">
+						<input type="hidden" name="ID" value="921" />
+						<input type="hidden" name="FO_CODE" value="100000095" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000095"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="618" value="100000095" checked id="size921_100000095" checked="checked" /> <label for="size921_100000095">33 см</label></div>
+															<div class="size-i " data-code="100000015"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="846" value="100000015"  id="size921_100000015" checked="checked" /> <label for="size921_100000015">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">618</span> р</div>
+															<div class="pr"><span class="shk-price">846</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/42d/americanka.jpg" title="Американка" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/42d/220_208_1/americanka.jpg" width="220" height="208" alt="" id="pizza-img922"></a>
+				</div>
+				<p class="name-h name">Американка</p>
+				<div class="desc-h">
+					<p class="sostav">ветчина пеперони грибы</p>
+					<form class="add-to-basket" rel="#pizza-img922" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=922&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=922&FO=100000072">
+						<input type="hidden" name="ID" value="922" />
+						<input type="hidden" name="FO_CODE" value="100000072" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000072"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="503" value="100000072" checked id="size922_100000072" checked="checked" /> <label for="size922_100000072">33 см</label></div>
+															<div class="size-i " data-code="100000002"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="675" value="100000002"  id="size922_100000002" checked="checked" /> <label for="size922_100000002">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">503</span> р</div>
+															<div class="pr"><span class="shk-price">675</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/0b1/kurinaya.jpg" title="Куриная" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/0b1/220_208_1/kurinaya.jpg" width="220" height="208" alt="" id="pizza-img923"></a>
+				</div>
+				<p class="name-h name">Куриная</p>
+				<div class="desc-h">
+					<p class="sostav">курица грибы маслины</p>
+					<form class="add-to-basket" rel="#pizza-img923" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=923&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=923&FO=100000105">
+						<input type="hidden" name="ID" value="923" />
+						<input type="hidden" name="FO_CODE" value="100000105" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000105"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="630" value="100000105" checked id="size923_100000105" checked="checked" /> <label for="size923_100000105">33 см</label></div>
+															<div class="size-i " data-code="100000018"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="794" value="100000018"  id="size923_100000018" checked="checked" /> <label for="size923_100000018">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">630</span> р</div>
+															<div class="pr"><span class="shk-price">794</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/675/julienne.jpg" title="Жульен" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/675/220_208_1/julienne.jpg" width="220" height="208" alt="" id="pizza-img924"></a>
+				</div>
+				<p class="name-h name">Жульен</p>
+				<div class="desc-h">
+					<p class="sostav">белые грибы курица сыр соус жульен</p>
+					<form class="add-to-basket" rel="#pizza-img924" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=924&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=924&FO=100000090">
+						<input type="hidden" name="ID" value="924" />
+						<input type="hidden" name="FO_CODE" value="100000090" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000090"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="808" value="100000090" checked id="size924_100000090" checked="checked" /> <label for="size924_100000090">33 см</label></div>
+															<div class="size-i " data-code="100000013"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="990" value="100000013"  id="size924_100000013" checked="checked" /> <label for="size924_100000013">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">808</span> р</div>
+															<div class="pr"><span class="shk-price">990</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/c80/astoria.jpg" title="QA" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/c80/220_208_1/astoria.jpg" width="220" height="208" alt="" id="pizza-img925"></a>
+				</div>
+				<p class="name-h name">QA</p>
+				<div class="desc-h">
+					<p class="sostav">пеперони курица помидоры болгарский перец</p>
+					<form class="add-to-basket" rel="#pizza-img925" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=925&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=925&FO=100000076">
+						<input type="hidden" name="ID" value="925" />
+						<input type="hidden" name="FO_CODE" value="100000076" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000076"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="503" value="100000076" checked id="size925_100000076" checked="checked" /> <label for="size925_100000076">33 см</label></div>
+															<div class="size-i " data-code="100000005"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="659" value="100000005"  id="size925_100000005" checked="checked" /> <label for="size925_100000005">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">503</span> р</div>
+															<div class="pr"><span class="shk-price">659</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/1ff/myasnoeassorti.jpg" title="Мясное ассорти" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/1ff/220_208_1/myasnoeassorti.jpg" width="220" height="208" alt="" id="pizza-img927"></a>
+				</div>
+				<p class="name-h name">Мясное ассорти</p>
+				<div class="desc-h">
+					<p class="sostav">ветчина пеперони курица бекон колбаски охотничьи</p>
+					<form class="add-to-basket" rel="#pizza-img927" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=927&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=927&FO=100000117">
+						<input type="hidden" name="ID" value="927" />
+						<input type="hidden" name="FO_CODE" value="100000117" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000117"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="647" value="100000117" checked id="size927_100000117" checked="checked" /> <label for="size927_100000117">33 см</label></div>
+															<div class="size-i " data-code="100000024"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="894" value="100000024"  id="size927_100000024" checked="checked" /> <label for="size927_100000024">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">647</span> р</div>
+															<div class="pr"><span class="shk-price">894</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/5cc/megapolis.jpg" title="Мегаполис" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/5cc/220_208_1/megapolis.jpg" width="220" height="208" alt="" id="pizza-img928"></a>
+				</div>
+				<p class="name-h name">Мегаполис</p>
+				<div class="desc-h">
+					<p class="sostav">1/4фермерская 1/4мясное ассорти 1/4супер пицца 1/4мексиканская</p>
+					<form class="add-to-basket" rel="#pizza-img928" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=928&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=928&FO=100000113">
+						<input type="hidden" name="ID" value="928" />
+						<input type="hidden" name="FO_CODE" value="100000113" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000113"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="557" value="100000113" checked id="size928_100000113" checked="checked" /> <label for="size928_100000113">33 см</label></div>
+															<div class="size-i " data-code="100000021"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="809" value="100000021"  id="size928_100000021" checked="checked" /> <label for="size928_100000021">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">557</span> р</div>
+															<div class="pr"><span class="shk-price">809</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/b18/superpizza.jpg" title="Супер пицца" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/b18/220_208_1/superpizza.jpg" width="220" height="208" alt="" id="pizza-img929"></a>
+				</div>
+				<p class="name-h name">Супер пицца</p>
+				<div class="desc-h">
+					<p class="sostav">курица томаты черри грибы</p>
+					<form class="add-to-basket" rel="#pizza-img929" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=929&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=929&FO=100000132">
+						<input type="hidden" name="ID" value="929" />
+						<input type="hidden" name="FO_CODE" value="100000132" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000132"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="594" value="100000132" checked id="size929_100000132" checked="checked" /> <label for="size929_100000132">33 см</label></div>
+															<div class="size-i " data-code="100000028"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="809" value="100000028"  id="size929_100000028" checked="checked" /> <label for="size929_100000028">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">594</span> р</div>
+															<div class="pr"><span class="shk-price">809</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/0fa/vostochnaya.jpg" title="Восточная" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/0fa/220_208_1/vostochnaya.jpg" width="220" height="208" alt="" id="pizza-img930"></a>
+				</div>
+				<p class="name-h name">Восточная</p>
+				<div class="desc-h">
+					<p class="sostav">говядина грибы болг перец</p>
+					<form class="add-to-basket" rel="#pizza-img930" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=930&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=930&FO=100000083">
+						<input type="hidden" name="ID" value="930" />
+						<input type="hidden" name="FO_CODE" value="100000083" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000083"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="669" value="100000083" checked id="size930_100000083" checked="checked" /> <label for="size930_100000083">33 см</label></div>
+															<div class="size-i " data-code="100000009"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="856" value="100000009"  id="size930_100000009" checked="checked" /> <label for="size930_100000009">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">669</span> р</div>
+															<div class="pr"><span class="shk-price">856</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/237/suprim.jpg" title="Суприм" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/237/220_208_1/suprim.jpg" width="220" height="208" alt="" id="pizza-img931"></a>
+				</div>
+				<p class="name-h name">Суприм</p>
+				<div class="desc-h">
+					<p class="sostav">салями сосиски перец болг маслины грибы лук халапеньо</p>
+					<form class="add-to-basket" rel="#pizza-img931" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=931&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=931&FO=100000133">
+						<input type="hidden" name="ID" value="931" />
+						<input type="hidden" name="FO_CODE" value="100000133" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000133"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="528" value="100000133" checked id="size931_100000133" checked="checked" /> <label for="size931_100000133">33 см</label></div>
+															<div class="size-i " data-code="100000029"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="696" value="100000029"  id="size931_100000029" checked="checked" /> <label for="size931_100000029">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">528</span> р</div>
+															<div class="pr"><span class="shk-price">696</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/99b/kupecheskaya.jpg" title="Купеческая" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/99b/220_208_1/kupecheskaya.jpg" width="220" height="208" alt="" id="pizza-img932"></a>
+				</div>
+				<p class="name-h name">Купеческая</p>
+				<div class="desc-h">
+					<p class="sostav">свинина колбаски охот. перец болг. маслины халапеньо</p>
+					<form class="add-to-basket" rel="#pizza-img932" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=932&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=932&FO=100000104">
+						<input type="hidden" name="ID" value="932" />
+						<input type="hidden" name="FO_CODE" value="100000104" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000104"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="562" value="100000104" checked id="size932_100000104" checked="checked" /> <label for="size932_100000104">33 см</label></div>
+															<div class="size-i " data-code="100000017"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="814" value="100000017"  id="size932_100000017" checked="checked" /> <label for="size932_100000017">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">562</span> р</div>
+															<div class="pr"><span class="shk-price">814</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/f93/kalconemyasnaya.jpg" title="Кальцоне мясная" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/f93/220_208_1/kalconemyasnaya.jpg" width="220" height="208" alt="" id="pizza-img935"></a>
+				</div>
+				<p class="name-h name">Кальцоне мясная</p>
+				<div class="desc-h">
+					<p class="sostav">ветчина салями пеперони грибы</p>
+					<form class="add-to-basket" rel="#pizza-img935" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=935&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=935&FO=100000098">
+						<input type="hidden" name="ID" value="935" />
+						<input type="hidden" name="FO_CODE" value="100000098" />
+						<input type="hidden" name="COMBO" value="" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000098"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="503" value="100000098" checked id="size935_100000098" checked="checked" /> <label for="size935_100000098">33 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">503</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/bb0/angliskiyzavtrak.jpg" title="Английский завтрак" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/bb0/220_208_1/angliskiyzavtrak.jpg" width="220" height="208" alt="" id="pizza-img936"></a>
+				</div>
+				<p class="name-h name">Английский завтрак</p>
+				<div class="desc-h">
+					<p class="sostav">бекон сосиски яйцо томаты</p>
+					<form class="add-to-basket" rel="#pizza-img936" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=936&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=936&FO=100000074">
+						<input type="hidden" name="ID" value="936" />
+						<input type="hidden" name="FO_CODE" value="100000074" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000074"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="503" value="100000074" checked id="size936_100000074" checked="checked" /> <label for="size936_100000074">33 см</label></div>
+															<div class="size-i " data-code="100000003"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="669" value="100000003"  id="size936_100000003" checked="checked" /> <label for="size936_100000003">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">503</span> р</div>
+															<div class="pr"><span class="shk-price">669</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/c17/meksikanskaya.jpg" title="Мексиканская" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/c17/220_208_1/meksikanskaya.jpg" width="220" height="208" alt="" id="pizza-img937"></a>
+				</div>
+				<p class="name-h name">Мексиканская</p>
+				<div class="desc-h">
+					<p class="sostav">говядина(фарш) халапеньо острый перчик</p>
+					<form class="add-to-basket" rel="#pizza-img937" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=937&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=937&FO=100000114">
+						<input type="hidden" name="ID" value="937" />
+						<input type="hidden" name="FO_CODE" value="100000114" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000114"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="503" value="100000114" checked id="size937_100000114" checked="checked" /> <label for="size937_100000114">33 см</label></div>
+															<div class="size-i " data-code="100000022"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="696" value="100000022"  id="size937_100000022" checked="checked" /> <label for="size937_100000022">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">503</span> р</div>
+															<div class="pr"><span class="shk-price">696</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/47e/bavarskaya.jpg" title="Баварская" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/47e/220_208_1/bavarskaya.jpg" width="220" height="208" alt="" id="pizza-img938"></a>
+				</div>
+				<p class="name-h name">Баварская</p>
+				<div class="desc-h">
+					<p class="sostav">колбаски охот. перец болг. салями маслины халапеньо острый перчик</p>
+					<form class="add-to-basket" rel="#pizza-img938" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=938&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=938&FO=100000077">
+						<input type="hidden" name="ID" value="938" />
+						<input type="hidden" name="FO_CODE" value="100000077" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000077"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="517" value="100000077" checked id="size938_100000077" checked="checked" /> <label for="size938_100000077">33 см</label></div>
+															<div class="size-i " data-code="100000006"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="669" value="100000006"  id="size938_100000006" checked="checked" /> <label for="size938_100000006">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">517</span> р</div>
+															<div class="pr"><span class="shk-price">669</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/8db/italika.jpg" title="Италика" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/8db/220_208_1/italika.jpg" width="220" height="208" alt="" id="pizza-img940"></a>
+				</div>
+				<p class="name-h name">Италика</p>
+				<div class="desc-h">
+					<p class="sostav">пеперони грибы перец болг маслины</p>
+					<form class="add-to-basket" rel="#pizza-img940" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=940&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=940&FO=100000092">
+						<input type="hidden" name="ID" value="940" />
+						<input type="hidden" name="FO_CODE" value="100000092" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000092"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="557" value="100000092" checked id="size940_100000092" checked="checked" /> <label for="size940_100000092">33 см</label></div>
+															<div class="size-i " data-code="100000014"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="798" value="100000014"  id="size940_100000014" checked="checked" /> <label for="size940_100000014">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">557</span> р</div>
+															<div class="pr"><span class="shk-price">798</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/3e9/domashniya.jpg" title="Домашняя" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/3e9/220_208_1/domashniya.jpg" width="220" height="208" alt="" id="pizza-img943"></a>
+				</div>
+				<p class="name-h name">Домашняя</p>
+				<div class="desc-h">
+					<p class="sostav">ветчина бекон грибы</p>
+					<form class="add-to-basket" rel="#pizza-img943" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=943&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=943&FO=100000089">
+						<input type="hidden" name="ID" value="943" />
+						<input type="hidden" name="FO_CODE" value="100000089" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000089"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="505" value="100000089" checked id="size943_100000089" checked="checked" /> <label for="size943_100000089">33 см</label></div>
+															<div class="size-i " data-code="100000012"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="669" value="100000012"  id="size943_100000012" checked="checked" /> <label for="size943_100000012">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">505</span> р</div>
+															<div class="pr"><span class="shk-price">669</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/526/morskoybriz.jpg" title="Морской бриз" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/526/220_208_1/morskoybriz.jpg" width="220" height="208" alt="" id="pizza-img945"></a>
+				</div>
+				<p class="name-h name">Морской бриз</p>
+				<div class="desc-h">
+					<p class="sostav">коктейль из морепродуктов каперсы</p>
+					<form class="add-to-basket" rel="#pizza-img945" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=945&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=945&FO=100000116">
+						<input type="hidden" name="ID" value="945" />
+						<input type="hidden" name="FO_CODE" value="100000116" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000116"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="585" value="100000116" checked id="size945_100000116" checked="checked" /> <label for="size945_100000116">33 см</label></div>
+															<div class="size-i " data-code="100000023"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="856" value="100000023"  id="size945_100000023" checked="checked" /> <label for="size945_100000023">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">585</span> р</div>
+															<div class="pr"><span class="shk-price">856</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+					<div class="cat_item cnt2" data-tps="">
+			<div class="cat_in shk-item">
+				<div class="image">
+					<a href="http://astoria-pizza.ru/upload/iblock/e48/tunec.jpg" title="С тунцом" rel="els" class="fancybox-img"><img src="http://astoria-pizza.ru/upload/resize_cache/iblock/e48/220_208_1/tunec.jpg" width="220" height="208" alt="" id="pizza-img946"></a>
+				</div>
+				<p class="name-h name">С тунцом</p>
+				<div class="desc-h">
+					<p class="sostav">тунец консервированный лук</p>
+					<form class="add-to-basket" rel="#pizza-img946" data-hr="http://astoria-pizza.ru/menu/bludo.php?ID=946&FO=" data-href="http://astoria-pizza.ru/menu/bludo.php?ID=946&FO=100000128">
+						<input type="hidden" name="ID" value="946" />
+						<input type="hidden" name="FO_CODE" value="100000128" />
+						<input type="hidden" name="COMBO" value="910" />
+						<div class="sized">
+															<div class="size-i active_size" data-code="100000128"  data-size="33 см"><input class="addparam" type="radio" name="FO_CODE" data-price="482" value="100000128" checked id="size946_100000128" checked="checked" /> <label for="size946_100000128">33 см</label></div>
+															<div class="size-i " data-code="100000027"  data-size="40 см"><input class="addparam" type="radio" name="FO_CODE" data-price="585" value="100000027"  id="size946_100000027" checked="checked" /> <label for="size946_100000027">40 см</label></div>
+													</div>
+						<div class="prices">
+															<div class="pr"><span class="shk-price">482</span> р</div>
+															<div class="pr"><span class="shk-price">585</span> р</div>
+													</div>
+						<p class="buy">
+							<button type="submit" name="shk-submit" class="tera">Заказать</button>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+			</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+
+    </div>
+    </body>
+
+
+
+                <!---     ----->
+
+<div class="modal fade" id="OrderPizza" tabindex="-1" role="dialog" aria-labelledby="orderPizza" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <h5 class="modal-title" id="OrderPizzaLabel">    </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      </div>
+      <div class="modal-body">
+        <form>
+
+
+
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="tera">Заказать</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+
+    $('#OrderPizza').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget)
+        var pizza_name = button.data('pizzaname')
+        var modal = $(this)
+
+        modal.find('.modal-title').text(pizza_name)
+        ## modal.find('.modal-body input').val(recipient)
+    })
+
+</script>
+
+
+</html>
